@@ -20,7 +20,7 @@ export default function Home() {
         
         <h1 className="block text-5xl font-bold text-center w-full leading-tight mb-12">
           <p>Power Containerized Stateful Applications</p> 
-          <p>with <span className="bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-blue-800">Faster Storage</span>.</p>
+          <p>with <span className="bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-blue-800">Faster Storage</span></p>
         </h1>
 
         <div className="text-xl w-2/4 mx-auto mb-20">
@@ -50,7 +50,7 @@ export default function Home() {
 
       <section className="p-20">
         <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
-          Built for highly dynamic and large scale workloads
+          Built for Highly Dynamic and Large Scale Workloads
         </h2>
         <div className="flex">
           <div className="w-2/4 space-y-6 text-xl text-gray-700 mr-12">
@@ -69,7 +69,7 @@ export default function Home() {
 
       <section className="p-20">
         <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
-          Run natively on Kubernetes and integrate perfectly with existing workflows
+          Run Natively on Kubernetes and Integrate Perfectly with Existing Workflows
         </h2>
         <div className="flex">
           <div className="w-2/4 space-y-6 text-xl text-gray-700 order-last">
@@ -88,7 +88,7 @@ export default function Home() {
 
       <section className="p-20">
         <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
-          Easily scale up or out as needed
+          Easily Scale Up or Out as Needed
         </h2>
         <div className="flex">
           <div className="w-2/4 space-y-6 text-xl text-gray-700">
