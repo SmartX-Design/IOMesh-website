@@ -214,7 +214,7 @@ export default function Home() {
               Subscribe
             </button>
           </div>
-          <div class="flex w-full">
+          <div className="flex w-full">
             <Link href="/">
               <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-purple-600">
                 <div className="mx-auto flex items-center space-x-2">
