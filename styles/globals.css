@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-3 {
+    border-width: 3px;
+}
+
+:root {
+    --iomesh-purple: #974EFF;
+}
+
+.topNav {
+    @apply flex place-content-between fixed container mx-auto max-w-screen-xl bg-purple-100 top-0 z-50 bg-opacity-80;
+    backdrop-filter: blur(10px);
+}
+
+.topNavLink {
+    @apply text-base text-gray-800;
+}
+
+.topNavLink:hover {
+    @apply text-purple-600;
+}
+
+.footerLink {
+    @apply text-gray-500;
+}
+
+.footerLink:hover {
+    @apply text-gray-800;
+}
+
+.gradient-bg {
+    background: linear-gradient(90.44deg, #A468FF 0.15%, #895AFF 44.67%, #4839FF 99.86%);
+}
+
+.border-io-purple {
+    border-color: var(--iomesh-purple);
+}
+
+.button-ghost {
+    
+}
+
+/* .input-hover:hover {
+    @apply border-4 border-red-400;
+} */
