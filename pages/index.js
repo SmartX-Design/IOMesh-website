@@ -27,7 +27,7 @@ export default function Home() {
           IOMesh is a distributed storage system specially designed for Kubernetes workloads, providing reliable persistent storage capabilities for containerized stateful applications such as MySQL, Cassandra, and MongoDB.
         </div>
 
-        <div className="rounded-2xl w-2/4 mx-auto bg-white bg-opacity-70 p-8 text-center">
+        <div className="rounded-2xl w-2/4 mx-auto bg-purple-200 bg-opacity-70 p-8 text-center">
           <h3 className="text-2xl font-bold">Get Started</h3>
           <h4 className="text-gray-500 mt-2">Just use one line of code to start using IOMesh.</h4>
           <div className="relative">
