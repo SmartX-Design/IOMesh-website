@@ -4,8 +4,8 @@ import { Footer } from '../components/footer';
 
 export default function Layout({ children }) {
     return (
-        <div className="w-full min-h-screen bg-gray-100">
-            <div className="container mx-auto p-8 max-w-screen-xl text-gray-900">
+        <div className="w-full min-h-screen bg-gray-50">
+            <div className="text-gray-900">
                 < Topnav />
                 {children}
                 < Footer />

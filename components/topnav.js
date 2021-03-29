@@ -5,7 +5,8 @@ import { useRouter } from "next/router"
 export const Topnav = () => {
     const router = useRouter()
     return (
-      <nav className="topNav">
+      <nav className="topNavWrapper">
+        <div className="topNav">
           <Link href="/">
             <Image 
                 src="/IOMesh_logo_on_white.svg"
@@ -23,46 +24,44 @@ export const Topnav = () => {
                         </a>
                     </Link>
                 </li> */}
-                <li className="p-2">
+                <li className="">
                     <Link href="/#">
-                        <a className={ `text-base text-gray-800 hover:text-purple-600 ${
+                        <a className={ `p-4 text-base text-gray-800 hover:text-iopurple ${
                             router.pathname === "/spec" ? "font-bold" : ""
                         }`} >
                             Spec
                         </a>
                     </Link>
                 </li>
-                <li className="p-2">
+                <li className="">
                     <Link href="/#">
-                        <a className={ `text-base text-gray-800 hover:text-purple-600 ${
+                        <a className={ `p-4 text-base text-gray-800 hover:text-iopurple ${
                             router.pathname === "/spec" ? "font-bold" : ""
                         }`} >
                             Docs
                         </a>
                     </Link>
                 </li>
-                <li className="p-2">
+                <li className="">
                     <Link href="/#">
-                        <a className={ `text-base text-gray-800 hover:text-purple-600 ${
+                        <a className={ `p-4 text-base text-gray-800 hover:text-iopurple ${
                             router.pathname === "/spec" ? "font-bold" : ""
                         }`} >
                             Blog
                         </a>
                     </Link>
                 </li>
-                <li className="box-border group rounded-full border-gray-800 border-3 hover:border-purple-600 transition">
-                    <Link href="#">
-                        <a className="text-sm inline-block px-4 py-1.5 font-bold text-gray-800 group-hover:text-purple-600 transition flex align-center space-x-2">
-                            <Image
-                                src="/slack.svg"
-                                width={16}
-                                height={16}
-                            />
-                            <span>We're on Slack!</span>
-                        </a>
-                    </Link>
+                <li className="box-border group rounded-full border-gray-800 border-2 hover:border-purple-600 transition">
+                    <a className="text-sm inline-block px-4 py-1.5 font-bold text-gray-800 group-hover:text-iopurple transition flex align-center space-x-2"  href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" >
+                        <Image
+                            src="/slack.svg"
+                            width={16}
+                            height={16}
+                        />
+                        <span>We're on Slack!</span>
+                    </a>
                 </li>
-                <li className="box-border rounded-full bg-gray-800 hover:bg-purple-600 flex align-center transition">
+                <li className="box-border rounded-full bg-gray-800 hover:bg-iopurple flex align-center transition">
                     <Link href="#">
                         <a className="text-sm inline-block px-4 py-2 font-bold text-white">
                             Get Started
@@ -70,6 +69,7 @@ export const Topnav = () => {
                     </Link>
                 </li>
             </ul>
+        </div>
       </nav>
     )
   }

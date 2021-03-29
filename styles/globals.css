@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.border-3 {
-    border-width: 3px;
+:root {
+    --iopurple: #974EFF;
 }
 
-:root {
-    --iomesh-purple: #974EFF;
+.topNavWrapper {
+    @apply w-full fixed top-0 z-50 bg-opacity-90 bg-white;
+    backdrop-filter: blur(10px);
 }
 
 .topNav {
-    @apply flex place-content-between fixed container mx-auto max-w-screen-xl top-0 z-50 bg-opacity-90 bg-gray-100;
-    backdrop-filter: blur(10px);
+    @apply flex place-content-between container mx-auto max-w-screen-xl;
 }
 
 .topNavLink {
@@ -20,7 +20,11 @@
 }
 
 .topNavLink:hover {
-    @apply text-purple-600;
+    @apply text-iopurple;
+}
+
+.sectionContentWrapper {
+    @apply container mx-auto max-w-screen-xl;
 }
 
 .footerLink {
@@ -35,12 +39,42 @@
     background: linear-gradient(90.44deg, #A468FF 0.15%, #895AFF 44.67%, #4839FF 99.86%);
 }
 
-.border-io-purple {
-    border-color: var(--iomesh-purple);
+.heroDesciption:hover .highlighted {
+    @apply text-gray-900;
 }
 
-.button-ghost {
-    
+.highlighted:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: var(--iopurple);
+    transition: width 100ms;
+}
+
+.highlighted:nth-child(2):before {
+    transition-delay: 150ms;
+}
+
+.highlighted:nth-child(3):before {
+    transition-delay: 300ms;
+}
+
+
+.heroDesciption:hover .highlighted:before {
+    width: 100%;
+}
+
+.highlighted {
+    position: relative;
+    display: inline-block;
+}
+
+.whatContent {
+    @apply text-2xl text-gray-900 font-medium;
 }
 
 /* .input-hover:hover {
