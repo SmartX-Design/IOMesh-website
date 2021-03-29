@@ -63,7 +63,7 @@ export default function Home() {
                 The design of IOMesh keeps this in mind and aims to provide the performance, reliability, and scalability required by cloud-native applications.
               </p>
             </div>
-            <figure className="w-2/4 rounded-xl relative flex flex-col">
+            <figure className="w-2/4 rounded-xl relative flex flex-col items-center">
               <Image 
                 src="/built_for_flatten.png"
                 width={400}
