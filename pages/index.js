@@ -33,9 +33,9 @@ export default function Home() {
             <h4 className="text-gray-500 mt-2">Just use one line of code to start using IOMesh.</h4>
             <div className="relative">
               <input type="textarea" disabled value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el7.sh | sh -"
-                className="w-full p-2 bg-gray-900 rounded-md mt-4 text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
+                className="w-full p-2 h-10 bg-gray-900 rounded-md mt-4 text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
               />
-              <button className="px-4 h-10 absolute bottom-0 right-0 text-white text-sm hover:text-iopurple-light ">Copy</button>
+              <button className="px-4 h-10 absolute bottom-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light bg-gradient-to-r from-transparent to-gray-900 hover:bg-gray-900">Copy</button>
             </div>
             <div className="mt-4">
               <Link href="/">
