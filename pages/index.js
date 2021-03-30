@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
           <title>IOMesh</title>
       </Head>
-      <section className="pt-28 pb-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="firstSection">
         <div className="sectionContentWrapper">
           <div className="flex flex-col algin-center mb-10">
             <Image 
@@ -39,10 +39,10 @@ export default function Home() {
             </div>
             <div className="mt-4">
               <Link href="/">
-              <a className="text-iopurple hover:text-iopurple-dark">Read Docs</a>
+                <a className="link">Read Docs</a>
               </Link>
               <span> to explore more. Or </span>
-              <a className="text-iopurple hover:text-iopurple-dark"  href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" >join the community </a>
+              <a className="link"  href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" >join the community </a>
               on Slack!
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function Home() {
             </div>
             <div className="flex w-full">
               
-              <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-iopurple" href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" >
+              <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-iopurple" href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" target="_blank">
                 <div className="mx-auto flex items-center space-x-2">
                   <Image
                     src="/slack.svg"
@@ -253,7 +253,7 @@ export default function Home() {
                 </div>        
               </a>
               
-              <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-iopurple flex items-center space-x-2" href="https://twitter.com/iomeshhq">
+              <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-iopurple flex items-center space-x-2" href="https://twitter.com/iomeshhq" target="_blank">
                 <div className="mx-auto flex items-center space-x-2">
                   <Image
                       src="/twitter.svg"

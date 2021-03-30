@@ -6,8 +6,12 @@
     --iopurple: #974EFF;
 }
 
+.link {
+    @apply text-iopurple hover:text-iopurple-dark;
+}
+
 .topNavWrapper {
-    @apply w-full fixed top-0 z-50 bg-opacity-90 bg-white;
+    @apply w-full fixed top-0 z-50 bg-opacity-90 bg-white px-4 xl:px-0;
     backdrop-filter: blur(10px);
 }
 
@@ -80,3 +84,11 @@
 /* .input-hover:hover {
     @apply border-4 border-red-400;
 } */
+
+.firstSection {
+    @apply pt-28 pb-20 bg-gradient-to-b from-white to-gray-50;
+}
+
+.firstSectionPage {
+    @apply pt-48 pb-12 bg-gradient-to-b from-white to-gray-50;
+}

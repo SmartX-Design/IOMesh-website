@@ -25,7 +25,7 @@ export const Topnav = () => {
                     </Link>
                 </li> */}
                 <li className="">
-                    <Link href="/#">
+                    <Link href="/spec">
                         <a className={ `p-4 text-base text-gray-800 hover:text-iopurple ${
                             router.pathname === "/spec" ? "font-bold" : ""
                         }`} >
@@ -34,18 +34,14 @@ export const Topnav = () => {
                     </Link>
                 </li>
                 <li className="">
-                    <Link href="/#">
-                        <a className={ `p-4 text-base text-gray-800 hover:text-iopurple ${
-                            router.pathname === "/spec" ? "font-bold" : ""
-                        }`} >
-                            Docs
-                        </a>
-                    </Link>
+                    <a className="p-4 text-base text-gray-800 hover:text-iopurple" href="http://iomesh.com/docs/next/about-iomesh/introduction" target="_blank">
+                        Docs
+                    </a>
                 </li>
                 <li className="">
-                    <Link href="/#">
+                    <Link href="/blog">
                         <a className={ `p-4 text-base text-gray-800 hover:text-iopurple ${
-                            router.pathname === "/spec" ? "font-bold" : ""
+                            router.pathname === "/blog" ? "font-bold" : ""
                         }`} >
                             Blog
                         </a>
