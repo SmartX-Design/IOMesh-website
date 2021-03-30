@@ -7,13 +7,13 @@ export default function Spec() {
     return (
     <Layout>
         <Head>
-            <title>Feature Specification - IOMesh</title>
+            <title>Specification - IOMesh</title>
         </Head>
         <section className="firstSectionPage">
             <h1 className="text-5xl font-bold text-center w-full">Spec</h1>
         </section> 
         <section className="py-20">
-          <div className="sectionContentWrapper">
+          <div className="sectionContentWrapper overflow-auto ">
             <table className="table-fixed max-w-screen-lg mx-auto text-left bg-white lg:rounded-lg">
               <thead className="text-xl border-b-2 border-gray-200">
                 <tr className="h-20">
@@ -130,7 +130,18 @@ export default function Spec() {
               </tbody>
             </table>
           </div>
-
+        </section>
+        <section className="mb-24">
+          <div className="rounded-2xl max-w-screen-lg mx-auto bg-iopurple bg-opacity-10 p-8 text-center">
+            <h3 className="text-2xl font-bold">Try IOMesh now with free community support on Slack.</h3>
+            <h4 className="text-gray-500 mt-2">Just use one line of code to start using IOMesh.</h4>
+            <div className="relative">
+              <input type="textarea" disabled value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el7.sh | sh -"
+                className="w-full p-2 h-10 bg-gray-900 rounded-md mt-4 text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
+              />
+              <button className="px-4 h-10 absolute bottom-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light bg-gradient-to-r from-transparent to-gray-900 hover:bg-gray-900">Copy</button>
+            </div>
+          </div>
         </section>
     </Layout>
     )

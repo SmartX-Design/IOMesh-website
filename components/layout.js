@@ -4,7 +4,7 @@ import { Footer } from '../components/footer';
 
 export default function Layout({ children }) {
     return (
-        <div className="w-full min-h-screen bg-gray-50">
+        <div className="w-full bg-gray-50 overflow-hidden">
             <div className="text-gray-900">
                 < Topnav />
                 {children}

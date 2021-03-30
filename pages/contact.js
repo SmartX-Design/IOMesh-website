@@ -6,11 +6,14 @@ export default function Spec() {
     return (
     <Layout>
         <Head>
-            <title>Feature Specification - IOMesh</title>
+            <title>Contact Us - IOMesh</title>
         </Head>
         <section className="firstSectionPage">
             <h1 className="text-5xl font-bold text-center w-full">Contact Us</h1>
-        </section> 
+        </section>
+        <section className="py-20">
+            
+        </section>
     </Layout>
     )
 }
