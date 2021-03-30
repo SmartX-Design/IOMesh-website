@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function Spec() {
+export default function Contact() {
   return (
     <Layout>
       <Head>
@@ -11,7 +11,7 @@ export default function Spec() {
       <section className="firstSectionPage">
           <h1 className="text-5xl font-bold text-center w-full">Contact Us</h1>
       </section>
-      <section className="py-20">
+      <section className="py-16">
           <div className="sectionContentWrapper">
             <form className="contactForm">
               <div className="flex space-x-4">

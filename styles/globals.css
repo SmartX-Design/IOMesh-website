@@ -98,7 +98,7 @@
 }
 
 .firstSectionPage {
-    @apply pt-48 pb-12 bg-gradient-to-b from-white to-gray-50;
+    @apply pt-36 bg-gradient-to-b from-white to-gray-50;
 }
 
 .contactForm {
@@ -146,4 +146,53 @@
 
 .subscribeCheckToggle:active:after {
 	width: 24px;
+}
+
+
+.blogArticleSection {
+    @apply max-w-screen-md mx-auto flex space-x-4;
+}
+
+.blogArticle {
+    @apply w-4/5 text-lg pb-20;
+}
+
+.blogArticle h1 {
+    @apply text-3xl font-bold my-6;
+}
+
+.blogArticle h2 {
+    @apply text-2xl font-bold my-6;
+}
+
+.blogArticle h3 {
+    @apply text-xl font-bold my-6;
+}
+
+.blogArticle h4 {
+    @apply text-lg font-bold my-6;
+}
+
+.blogArticle p {
+    @apply my-4;
+}
+
+.blogArticle h1:first-child,
+.blogArticle h2:first-child,
+.blogArticle h3:first-child,
+.blogArticle h4:first-child,
+.blogArticle p:first-child {
+    @apply mt-0;
+}
+
+.blogArticle ul {
+    @apply list-disc space-y-2 text-gray-600 my-4 pl-8;
+}
+
+.blogArticle a {
+    @apply text-iopurple hover:text-iopurple-light hover:underline transition;
+}
+
+.blogArticle img {
+    @apply p-4 rounded bg-white;
 }

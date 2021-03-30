@@ -12,7 +12,7 @@ export default function Spec() {
         <section className="firstSectionPage">
             <h1 className="text-5xl font-bold text-center w-full">Spec</h1>
         </section> 
-        <section className="py-20">
+        <section className="py-16">
           <div className="sectionContentWrapper overflow-auto ">
             <table className="table-fixed max-w-screen-lg mx-auto text-left bg-white lg:rounded-lg">
               <thead className="text-xl border-b-2 border-gray-200">
