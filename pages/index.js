@@ -233,8 +233,8 @@ export default function Home() {
               Subscribe to Newsletter
             </h3>
             <div className="flex pb-4 mb-4 border-b border-gray-300">
-              <input type="text" placeholder="yourname@email.com" className="w-3/4 h-10 p-2 rounded-md border-gray-300 border-2 text-sm hover:border-purple-500 focus:outline-none focus:border-purple-300 focus:ring-2 focus:ring-purple-300"></input>
-              <button className="w-1/4 h-10 ml-4 rounded-md bg-gray-900 text-white font-bold hover:bg-iopurple">
+              <input type="text" placeholder="yourname@email.com" className="w-3/4 input"></input>
+              <button className="w-1/4 h-12 ml-4 rounded-md bg-gray-900 text-white font-bold hover:bg-iopurple">
                 Subscribe
               </button>
             </div>

@@ -10,6 +10,14 @@
     @apply text-iopurple hover:text-iopurple-dark;
 }
 
+.input {
+    @apply p-2 rounded-md border-gray-300 border-2 text-base hover:border-purple-500 hover:shadow-md focus:outline-none focus:border-purple-300 focus:ring-2 focus:ring-purple-300;
+}
+
+.error {
+    @apply border-red-500;
+}
+
 .topNavWrapper {
     @apply w-full fixed top-0 z-50 bg-opacity-90 bg-white px-4 xl:px-0;
     backdrop-filter: blur(10px);
@@ -91,4 +99,51 @@
 
 .firstSectionPage {
     @apply pt-48 pb-12 bg-gradient-to-b from-white to-gray-50;
+}
+
+.contactForm {
+    @apply max-w-screen-sm bg-white p-10 mx-auto sm:rounded-xl space-y-4;
+}
+
+.contactForm label {
+    @apply text-gray-600 leading-loose block;
+}
+
+.subscribeCheck {
+    @apply h-0 w-0 invisible;
+}
+
+.subscribeCheckToggle {
+    @apply cursor-pointer bg-gray-400;
+	text-indent: -9999px;
+	width: 40px;
+	height: 24px;
+	display: block;
+	border-radius: 12px;
+	position: relative;
+}
+
+.subscribeCheckToggle:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.subscribeCheck:checked + label {
+	@apply bg-iopurple;
+}
+
+.subscribeCheck:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.subscribeCheckToggle:active:after {
+	width: 24px;
 }
