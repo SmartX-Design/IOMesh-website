@@ -33,7 +33,7 @@ export default function Spec() {
                     <td className="px-8 py-2 text-center"><a href="https://iomesh.slack.com" target="_blank" className="link">Community Support via Slack</a></td>
                     <td className="px-8 py-2 text-center"><Link href="/contact"><a className="link">24x7 Enterprise Support</a></Link></td>
                 </tr>
-                <tr className="text-base uppercase font-bold h-12 text-gray-900">
+                <tr className="text-sm uppercase font-bold h-12 text-gray-900">
                     <td className="px-8">Features</td>
                 </tr>
                 <tr className="border-b border-gray-100">

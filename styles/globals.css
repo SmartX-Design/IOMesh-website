@@ -148,13 +148,12 @@
 	width: 24px;
 }
 
-
 .blogArticleSection {
     @apply max-w-screen-md mx-auto flex space-x-4;
 }
 
 .blogArticle {
-    @apply w-4/5 text-lg pb-20;
+    @apply w-4/5 text-lg;
 }
 
 .blogArticle h1 {
