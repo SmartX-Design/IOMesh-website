@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
+import Install from '../components/install'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -28,24 +29,7 @@ export default function Home() {
             IOMesh is a <span className="highlighted">distributed storage system</span> specially designed for <span className="highlighted">Kubernetes workloads</span>, providing reliable persistent storage capabilities for <span className="highlighted">containerized stateful applications</span> such as MySQL, Cassandra, and MongoDB.
           </div>
 
-          <div className="rounded-2xl w-2/4 mx-auto bg-iopurple bg-opacity-10 p-8 text-center">
-            <h3 className="text-2xl font-bold">Get Started</h3>
-            <h4 className="text-gray-500 mt-2">Just use one line of code to start using IOMesh.</h4>
-            <div className="relative">
-              <input type="textarea" disabled value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el7.sh | sh -"
-                className="w-full p-2 h-10 bg-gray-900 rounded-md mt-4 text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
-              />
-              <button className="px-4 h-10 absolute bottom-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light bg-gradient-to-r from-transparent to-gray-900 hover:bg-gray-900">Copy</button>
-            </div>
-            <div className="mt-4">
-              <Link href="/">
-                <a className="link">Read Docs</a>
-              </Link>
-              <span> to explore more. Or </span>
-              <a className="link"  href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" >join the community </a>
-              on Slack!
-            </div>
-          </div>
+
         </div>  
       </section>
 
@@ -209,6 +193,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="pb-20">
+        <div className="sectionContentWrapper">
+          <Install></Install> 
+        </div>
+      </section>
 
       <section className="">
         <div className="sectionContentWrapper grid grid-cols-4 gap-6 pb-20">
@@ -269,6 +258,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+    
+      
     </Layout>
   )
 }

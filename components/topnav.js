@@ -15,15 +15,6 @@ export const Topnav = () => {
             />
           </Link>
            <ul className="flex items-center space-x-4">
-                {/* <li className="p-2">
-                    <Link href="/">
-                        <a className={ `topNavLink ${
-                            router.pathname === "/" ? "font-bold" : ""
-                        }`} >
-                            Home
-                        </a>
-                    </Link>
-                </li> */}
                 <li className="">
                     <Link href="/spec">
                         <a className={ `p-4 text-base text-gray-800 hover:text-iopurple ${

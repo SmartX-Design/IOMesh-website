@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '../components/layout'
+import Install from '../components/install'
 
 export default function Spec() {
     return (
@@ -131,16 +132,9 @@ export default function Spec() {
             </table>
           </div>
         </section>
-        <section className="mb-24">
-          <div className="rounded-2xl max-w-screen-lg mx-auto bg-iopurple bg-opacity-10 p-8 text-center">
-            <h3 className="text-2xl font-bold">Try IOMesh now with free community support on Slack.</h3>
-            <h4 className="text-gray-500 mt-2">Just use one line of code to start using IOMesh.</h4>
-            <div className="relative">
-              <input type="textarea" disabled value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el7.sh | sh -"
-                className="w-full p-2 h-10 bg-gray-900 rounded-md mt-4 text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
-              />
-              <button className="px-4 h-10 absolute bottom-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light bg-gradient-to-r from-transparent to-gray-900 hover:bg-gray-900">Copy</button>
-            </div>
+        <section className="pb-20">
+          <div className="max-w-screen-lg mx-auto">
+            <Install></Install> 
           </div>
         </section>
     </Layout>
