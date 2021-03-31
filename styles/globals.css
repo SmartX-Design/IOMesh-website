@@ -195,3 +195,5 @@
 .blogArticle img {
     @apply p-4 rounded bg-white;
 }
+
+/* 缺少 Table、Code 样式定义 */
