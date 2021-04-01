@@ -94,7 +94,7 @@
 } */
 
 .firstSection {
-    @apply pt-28 pb-20 bg-gradient-to-b from-white to-gray-50;
+    @apply pt-36 pb-20 bg-gradient-to-b from-white to-gray-50;
 }
 
 .firstSectionPage {

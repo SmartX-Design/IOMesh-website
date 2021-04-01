@@ -22,13 +22,18 @@ export default function Home() {
           
           <h1 className="block text-5xl font-bold text-center w-full leading-tight mb-12">
             <p>Power Containerized Stateful Applications</p> 
-            <p>with <span className="bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-blue-800">Faster Storage</span></p>
+            <p>with <span className="bg-clip-text text-transparent bg-gradient-to-br from-iopurple-light to-iopurple-dark">Faster Storage</span></p>
           </h1>
 
-          <div className="heroDesciption text-xl w-2/4 mx-auto mb-20 hover:text-gray-600 transition">
-            IOMesh is a <span className="highlighted">distributed storage system</span> specially designed for <span className="highlighted">Kubernetes workloads</span>, providing reliable persistent storage capabilities for <span className="highlighted">containerized stateful applications</span> such as MySQL, Cassandra, and MongoDB.
+          <div className="heroDesciption text-3xl leading-10 text-center w-2/4 mx-auto mb-20 text-gray-600 hover:text-gray-900 transition">
+            A distributed storage system providing persistent storage for stateful applications in Kubernetes.
           </div>
 
+          <div className="w-full flex">
+            <a href="#install" className="mx-auto box-border rounded-full bg-gradient-to-br from-iopurple-light to-iopurple-dark hover:from-iopurple hover:to-blue-600 hover:shadow-md transform hover:scale-105 transition-transform text-lg px-6 py-2 font-bold text-white">
+              Install IOMesh Now
+            </a>
+          </div>
 
         </div>  
       </section>
@@ -36,65 +41,55 @@ export default function Home() {
       <section className="p-20">
         <div className="sectionContentWrapper">
           <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
-            Built for Highly Dynamic and Large Scale Workloads
+            Born for Cloud Native. Fit In. Grow Big.
           </h2>
-          <div className="flex items-center">
-            <div className="w-2/4 px-12 space-y-6 whatContent mr-6 relative">
-              <p>
-                Thousands of Pods created and destroyed every minute in kubernetes clusters. IOMesh is built for such highly dynamic and large-scale workloads in the cloud-native era.
-              </p>
-              <p>
-                The design of IOMesh keeps this in mind and aims to provide the performance, reliability, and scalability required by cloud-native applications.
-              </p>
-            </div>
-            <figure className="w-2/4 rounded-xl relative flex flex-col items-center">
-              <Image 
-                src="/built_for_flatten.png"
-                width={400}
-                height={400}
-              />              
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section className="p-20 bg-white">
-        <div className="sectionContentWrapper">
-          <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
-            Run Natively on Kubernetes
-          </h2>
-          <div className="flex">
-            <div className="w-2/4 space-y-6 whatContent order-last">
-              <p>
-                Run natively on Kubernetes and was completely developed utilizing Kubernetes's capabilities.
-              </p>
-              <p>
-                Operations teams can leverage the standard Kubernetes APIs for unified management of both applications and IOMesh storage system, which integrates perfectly with existing DevOps processes.
+          <div className="flex items-start">
+            <div className="w-1/3 px-12 space-y-6 mr-6 relative">
+              <figure className="">
+                <Image 
+                  src="/built_for_flatten.png"
+                  width={40}
+                  height={40}
+                />              
+              </figure>
+              <h3 className="text-2xl text-gray-900 font-bold">
+                Built for Highly Dynamic and Large-Scale Workloads
+              </h3>
+              <p className="text-lg">
+                IOMesh is designed to provide the performance, reliability, and scalability required by cloud-native applications. 
               </p>
             </div>
-            <figure className="w-2/4 rounded-xl relative flex flex-col">
-              <Image 
-                src="/native.svg"
-                width={400}
-                height={275}
-              />              
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section className="p-20">
-        <div className="sectionContentWrapper">
-          <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
-            Easily Scale Up or Out as Needed
-          </h2>
-          <div className="flex flex-col flex-wrap w-2/4 whatContent bg-white rounded-2xl p-12 mx-auto">
-            <div className="pb-8">
-              Allow starting on a small scale.
+            <div className="w-1/3 px-12 space-y-6 mr-6 relative">
+              <figure className="">
+                <Image 
+                  src="/built_for_flatten.png"
+                  width={40}
+                  height={40}
+                />              
+              </figure>
+              <h3 className="text-2xl text-gray-900 font-bold">
+                Integrates Perfectly with Your Existing Workflows
+              </h3>
+              <p className="text-lg">
+                IOMesh runs natively on Kubernetes. The standard k8s primitives are sufficient to manage IOMesh. 
+              </p>
             </div>
-            <div className="pt-8 border-gray-200 border-t-2">
-              Allow expand the storage at will by adding disks or nodes.
+            <div className="w-1/3 px-12 space-y-6 mr-6 relative">
+              <figure className="">
+                <Image 
+                  src="/built_for_flatten.png"
+                  width={40}
+                  height={40}
+                />              
+              </figure>
+              <h3 className="text-2xl text-gray-900 font-bold">
+                Easy to Scale Up or Out as Needed
+              </h3>
+              <p className="text-lg">
+                IOMesh allows you to start small and expand storage at will by adding disks or nodes. 
+              </p>
             </div>
+           
           </div>
         </div>
       </section>
@@ -129,14 +124,14 @@ export default function Home() {
                   Better TPS for Database
                 </h3>
                 <p className="text-xl text-gray-700">
-                  IOMesh has shown excellent performance in standard benchmark tests for Kubernetes. The Read/Write Latency is stable. This means that it can provide more stable and efficient data services.
+                  IOMesh performs very well in benchmark tests for Kubernetes, with greater IOPS and lower I/O latency, which means that it can provide more stable data services.
                 </p>
                 <figure className="text-gray-900 mt-12 w-1/3">
                   <div className="">
                     <span className="text-5xl italic">&lt;</span> <span className="text-5xl font-bold italic">100</span> <span>ms</span>
                   </div>
                   <div className="mt-4 text-gray-500 leading-tight">
-                    Read/Write Latency is stablely kept in a low level.
+                    I/O Latency Latency is stablely kept in a low level.
                   </div>
                 </figure>
               </div>
@@ -149,7 +144,7 @@ export default function Home() {
                 No Kernel Dependencies
               </h4>
               <h3 className="block text-3xl font-bold text-left w-full mb-8">
-                More Reliable with Efficient Software Fault Isolation
+                Efficient Software Fault Isolation
               </h3>
               <figure className="w-full flex flex-col items-center mb-8">
                 <Image 
@@ -160,19 +155,19 @@ export default function Home() {
               </figure>
               <div className="text-xl text-gray-700 space-y-6">
                 <p>
-                  IOMesh runs entirely in the userspace. It can provide more reliable service with efficient software fault isolation. When something wrong happens, the rest applications running on the same node can continue to run instead of causing the entire system to crash. 
+                  IOMesh runs entirely in user space, minimizing the crash of the entire system. 
                 </p>
                 <p>
-                  Simple to deploy and maintain: There is no need to install any kernel module during deployment, and no need to consider kernel version compatibility in the future.
+                  This can help you simplify deployment and maintenance without having to consider kernel modules.
                 </p>
               </div>
             </div>
             <div className="col-span-1 p-12 bg-white rounded-xl">
               <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
-                Storage Performance Tiering
+                Automated Storage Tiering
               </h4>
               <h3 className="block text-3xl font-bold text-left w-full mb-8">
-                Make the Most of Your Storage Investment
+                Make the Most out of Your Money
               </h3>
               <figure className="w-full flex flex-col items-center mb-8">
                 <Image 
@@ -194,7 +189,7 @@ export default function Home() {
         </div>
       </section>
       <section className="pb-20">
-        <div className="sectionContentWrapper">
+        <div className="sectionContentWrapper" id="install">
           <Install></Install> 
         </div>
       </section>
