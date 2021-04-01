@@ -25,7 +25,7 @@ export default function Home() {
             <p>with <span className="bg-clip-text text-transparent bg-gradient-to-br from-iopurple-light to-iopurple-dark">Faster Storage</span></p>
           </h1>
 
-          <div className="heroDesciption text-3xl leading-10 text-center lg:w-2/4 mx-auto mb-20 text-gray-600 hover:text-gray-900 transition">
+          <div className="heroDesciption text-3xl leading-10 text-center lg:w-2/3 mx-auto mb-20 text-gray-600 hover:text-gray-900 transition">
             A distributed storage system providing persistent storage for stateful applications in Kubernetes.
           </div>
 
@@ -47,7 +47,7 @@ export default function Home() {
             <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 mr-6 relative">
               <figure className="">
                 <Image 
-                  src="/built_for_flatten.png"
+                  src="/dynamic.svg"
                   width={40}
                   height={40}
                 />              
@@ -62,7 +62,7 @@ export default function Home() {
             <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 mr-6 relative">
               <figure className="">
                 <Image 
-                  src="/built_for_flatten.png"
+                  src="/integrate.svg"
                   width={40}
                   height={40}
                 />              
@@ -77,7 +77,7 @@ export default function Home() {
             <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 relative">
               <figure className="">
                 <Image 
-                  src="/built_for_flatten.png"
+                  src="/scale.svg"
                   width={40}
                   height={40}
                 />              
@@ -99,11 +99,11 @@ export default function Home() {
           <h2 className="block text-3xl font-bold text-center w-full leading-tight mb-10">
             Architecture
           </h2>
-          <figure className="">
+          <figure className="flex flex-col items-center">
             <Image
               src="/IOMesh_Architecture.png"
-              width={1182}
-              height={716}
+              width={800}
+              height={484}
             />
           </figure>
         </div>
@@ -197,8 +197,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-10 bg-white">
-        <div className="sectionContentWrapper" id="install">
+      <section className="py-10 bg-white"  id="install">
+        <div className="sectionContentWrapper">
           <Install></Install> 
         </div>
       </section>
@@ -225,14 +225,16 @@ export default function Home() {
             <h3 className="block text-2xl font-bold text-left w-full mb-4 group-hover:text-white transition">
               Subscribe to Newsletter
             </h3>
-            <div className="flex pb-4 mb-4 border-b border-gray-300">
+            <div className="flex pb-2">
+            {/* <div className="flex pb-4 mb-4 border-b border-gray-300"> */}
               <input type="text" placeholder="yourname@email.com" className="w-3/4 input"></input>
               <button className="w-1/4 min-w-min px-4 h-12 ml-4 rounded-md bg-gray-900 text-white font-bold hover:bg-iopurple">
                 Subscribe
               </button>
             </div>
-            <div className="flex w-full">
-              <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-iopurple" href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" target="_blank">
+            <div className="flex w-full text-sm text-gray-500">
+              Only product updates, at most 1 email/month.
+              {/* <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-iopurple" href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" target="_blank">
                 <div className="mx-auto flex items-center space-x-2">
                   <Image
                     src="/slack.svg"
@@ -256,7 +258,7 @@ export default function Home() {
                     Follow IOMesh on Twitter
                   </span>
                 </div>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

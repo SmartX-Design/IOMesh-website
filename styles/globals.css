@@ -18,6 +18,10 @@
     @apply border-red-500;
 }
 
+.contentWrapper {
+    min-height: calc(100vh - 8rem);
+}
+
 .topNavWrapper {
     @apply w-full fixed top-0 z-50 bg-opacity-90 bg-white px-4 xl:px-0;
     backdrop-filter: blur(10px);

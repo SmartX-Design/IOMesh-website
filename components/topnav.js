@@ -67,7 +67,7 @@ export const Topnav = () => {
             </Link>
           </li>
           <li className="">
-            <a className="block my-2 lg:mb-0 box-border group rounded-full border-gray-800 border-2 hover:border-purple-600 transition text-sm inline-block px-4 py-1.5 font-bold text-gray-800 group-hover:text-iopurple flex align-center space-x-2"  href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" >
+            <a className="block my-2 lg:my-0 box-border group rounded-full border-gray-800 border-2 hover:border-purple-600 transition text-sm inline-block px-4 py-1.5 font-bold text-gray-800 group-hover:text-iopurple flex align-center space-x-2"  href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" >
               <Image
                 src="/slack.svg"
                 width={16}
