@@ -24,7 +24,7 @@
 }
 
 .topNav {
-    @apply flex place-content-between container mx-auto max-w-screen-xl;
+    @apply flex place-content-between items-center container mx-auto max-w-screen-xl;
 }
 
 .topNavLink {
@@ -36,7 +36,7 @@
 }
 
 .sectionContentWrapper {
-    @apply container mx-auto max-w-screen-xl;
+    @apply container mx-auto max-w-screen-xl px-8;
 }
 
 .footerLink {
@@ -196,8 +196,5 @@
     @apply p-4 rounded bg-white;
 }
 
-.blogArticle pre {
-    @apply text-sm;
-}
 
 /* 缺少 Table、Code 样式定义 */

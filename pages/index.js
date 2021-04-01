@@ -25,7 +25,7 @@ export default function Home() {
             <p>with <span className="bg-clip-text text-transparent bg-gradient-to-br from-iopurple-light to-iopurple-dark">Faster Storage</span></p>
           </h1>
 
-          <div className="heroDesciption text-3xl leading-10 text-center w-2/4 mx-auto mb-20 text-gray-600 hover:text-gray-900 transition">
+          <div className="heroDesciption text-3xl leading-10 text-center lg:w-2/4 mx-auto mb-20 text-gray-600 hover:text-gray-900 transition">
             A distributed storage system providing persistent storage for stateful applications in Kubernetes.
           </div>
 
@@ -38,13 +38,13 @@ export default function Home() {
         </div>  
       </section>
 
-      <section className="p-20">
+      <section className="py-20">
         <div className="sectionContentWrapper">
           <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
-            Born for Cloud Native. Fit In. Grow Big.
+            Fast, Feasible, Flexible
           </h2>
-          <div className="flex items-start">
-            <div className="w-1/3 px-12 space-y-6 mr-6 relative">
+          <div className="flex items-start flex-wrap space-y-8 lg:space-y-0 lg:flex-nowrap">
+            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 mr-6 relative">
               <figure className="">
                 <Image 
                   src="/built_for_flatten.png"
@@ -59,7 +59,7 @@ export default function Home() {
                 IOMesh is designed to provide the performance, reliability, and scalability required by cloud-native applications. 
               </p>
             </div>
-            <div className="w-1/3 px-12 space-y-6 mr-6 relative">
+            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 mr-6 relative">
               <figure className="">
                 <Image 
                   src="/built_for_flatten.png"
@@ -74,7 +74,7 @@ export default function Home() {
                 IOMesh runs natively on Kubernetes. The standard k8s primitives are sufficient to manage IOMesh. 
               </p>
             </div>
-            <div className="w-1/3 px-12 space-y-6 mr-6 relative">
+            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 relative">
               <figure className="">
                 <Image 
                   src="/built_for_flatten.png"
@@ -115,8 +115,8 @@ export default function Home() {
             Why Use IOMesh?
           </h2>
           <div className="grid grid-col-2 gap-8">
-            <div className="flex col-span-2 bg-white rounded-xl">
-              <div className="p-12 w-2/4">
+            <div className="flex flex-wrap md:flex-nowrap col-span-2 bg-white rounded-xl hover:shadow-lg transition-shadow   duration-500">
+              <div className="p-6 md:p-8 lg:p-10 w-full md:w-2/4">
                 <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
                   High Performance
                 </h4>
@@ -126,7 +126,7 @@ export default function Home() {
                 <p className="text-xl text-gray-700">
                   IOMesh performs very well in benchmark tests for Kubernetes, with greater IOPS and lower I/O latency, which means that it can provide more stable data services.
                 </p>
-                <figure className="text-gray-900 mt-12 w-1/3">
+                <figure className="text-gray-900 mt-12 w-1/2 xl:w-1/3">
                   <div className="">
                     <span className="text-5xl italic">&lt;</span> <span className="text-5xl font-bold italic">100</span> <span>ms</span>
                   </div>
@@ -135,12 +135,12 @@ export default function Home() {
                   </div>
                 </figure>
               </div>
-              <div className="w-2/4 rounded-r-xl bg-gray-900">
+              <div className="w-full md:w-2/4  rounded-b-xl md:rounded-r-xl md:rounded-bl-none bg-gray-900">
                 Performance Chart
               </div>
             </div>
-            <div className="p-12 col-span-2 bg-white rounded-xl flex items-end">
-              <div className="w-2/4">
+            <div className="p-6 md:p-8 lg:p-10 col-span-2 bg-white rounded-xl flex flex-wrap md:flex-nowrap items-center space-y-8 md:space-y-0  hover:shadow-lg transition-shadow   duration-500">
+              <div className="w-full md:w-2/4">
                 <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
                   No Kernel Dependencies
                 </h4>
@@ -157,18 +157,18 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="w-2/4 rounded-r-xl">
-                <figure className="w-full flex flex-col items-center mb-8">
-                  <Image 
-                    src="/no_kernel.png"
-                    width={394}
-                    height={160}
-                  />    
-                </figure>
-              </div>
+
+              <figure className="w-full md:w-2/4 flex flex-col items-center">
+                <Image 
+                  src="/no_kernel.png"
+                  width={394}
+                  height={160}
+                />    
+              </figure>
+
             </div>
-            <div className="p-12 col-span-2 bg-white rounded-xl flex items-end">
-              <div className="w-2/4">
+            <div className="p-6 md:p-8 lg:p-10 col-span-2 bg-white rounded-xl flex items-center md:flex-nowrap items-end space-y-8 md:space-y-0 hover:shadow-lg transition-shadow   duration-500">
+              <div className="w-full md:w-2/4">
                 <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
                   Automated Storage Tiering
                 </h4>
@@ -185,7 +185,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <figure className="w-2/4 flex flex-col items-center mb-8">
+              <figure className="w-full md:w-2/4 flex flex-col items-center">
                 <Image 
                   src="/tiering.png"
                   width={394}
@@ -206,7 +206,7 @@ export default function Home() {
       <section className="py-10">
         <div className="sectionContentWrapper grid grid-cols-4 gap-6 pb-20">
           <Link href="/blog/annoucing-iomesh-1.0.0">
-            <a className="block col-span-2 p-12 group rounded-xl hover:bg-iopurple transition-all">
+            <a className="block col-span-4 lg:col-span-2 p-12 group rounded-xl hover:bg-iopurple transition-all">
               <h4 className="text-md font-bold text-gray-600 uppercase group-hover:text-white group-hover:opacity-60 transition">
                 Latest Blog
               </h4>
@@ -218,7 +218,7 @@ export default function Home() {
               </p>
             </a>
           </Link>
-          <div className="col-span-2 p-12">
+          <div className="col-span-4 lg:col-span-2 p-12">
             <h4 className="text-md font-bold text-gray-600 uppercase group-hover:text-white group-hover:opacity-60 transition">
               Stay Tuned
             </h4>
@@ -227,12 +227,11 @@ export default function Home() {
             </h3>
             <div className="flex pb-4 mb-4 border-b border-gray-300">
               <input type="text" placeholder="yourname@email.com" className="w-3/4 input"></input>
-              <button className="w-1/4 h-12 ml-4 rounded-md bg-gray-900 text-white font-bold hover:bg-iopurple">
+              <button className="w-1/4 min-w-min px-4 h-12 ml-4 rounded-md bg-gray-900 text-white font-bold hover:bg-iopurple">
                 Subscribe
               </button>
             </div>
             <div className="flex w-full">
-              
               <a className="w-2/4 text-sm text-gray-700 font-medium hover:text-iopurple" href="https://join.slack.com/t/slack-vcm1551/shared_invite/zt-nx33ud5h-~0D_MD5kL0sUrwslB~KF_A" target="_blank">
                 <div className="mx-auto flex items-center space-x-2">
                   <Image
