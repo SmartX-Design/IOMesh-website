@@ -11,7 +11,7 @@ export default function Spec() {
             <title>Specification - IOMesh</title>
         </Head>
         <section className="firstSectionPage">
-            <h1 className="text-5xl font-bold text-center w-full">Spec</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-center w-full">Spec</h1>
         </section> 
         <section className="py-16">
           <div className="sectionContentWrapper overflow-auto ">

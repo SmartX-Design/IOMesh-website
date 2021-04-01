@@ -20,12 +20,12 @@ export default function Home() {
             />
           </div>
           
-          <h1 className="block text-5xl font-bold text-center w-full leading-tight mb-12">
+          <h1 className="block text-3xl md:text-5xl font-bold text-center w-full leading-tight mb-12">
             <p>Power Containerized Stateful Applications</p> 
             <p>with <span className="bg-clip-text text-transparent bg-gradient-to-br from-iopurple-light to-iopurple-dark">Faster Storage</span></p>
           </h1>
 
-          <div className="heroDesciption text-3xl leading-10 text-center lg:w-2/3 mx-auto mb-20 text-gray-600 hover:text-gray-900 transition">
+          <div className="heroDesciption text-xl md:text-3xl md:leading-10 text-center lg:w-2/3 mx-auto mb-12 md:mb-20 text-gray-600 hover:text-gray-900 transition">
             A distributed storage system providing persistent storage for stateful applications in Kubernetes.
           </div>
 
@@ -38,13 +38,13 @@ export default function Home() {
         </div>  
       </section>
 
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="sectionContentWrapper">
-          <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">
+          <h2 className="block text-3xl md:text-4xl font-bold text-center w-full leading-tight mb-10 md:mb-20">
             Fast, Feasible, Flexible
           </h2>
           <div className="flex items-start flex-wrap space-y-8 lg:space-y-0 lg:flex-nowrap">
-            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 mr-6 relative">
+            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-4 md:space-y-6 lg:mr-6 relative">
               <figure className="">
                 <Image 
                   src="/dynamic.svg"
@@ -52,14 +52,14 @@ export default function Home() {
                   height={40}
                 />              
               </figure>
-              <h3 className="text-2xl text-gray-900 font-bold">
+              <h3 className="text-xl md:text-2xl text-gray-900 font-bold text-justif">
                 Built for Highly Dynamic and Large-Scale Workloads
               </h3>
               <p className="text-lg">
                 IOMesh is designed to provide the performance, reliability, and scalability required by cloud-native applications. 
               </p>
             </div>
-            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 mr-6 relative">
+            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-4 md:space-y-6 lg:mr-6 relative">
               <figure className="">
                 <Image 
                   src="/integrate.svg"
@@ -67,14 +67,14 @@ export default function Home() {
                   height={40}
                 />              
               </figure>
-              <h3 className="text-2xl text-gray-900 font-bold">
+              <h3 className="text-xl md:text-2xl text-gray-900 font-bold">
                 Integrates Perfectly with Your Existing Workflows
               </h3>
               <p className="text-lg">
                 IOMesh runs natively on Kubernetes. The standard k8s primitives are sufficient to manage IOMesh. 
               </p>
             </div>
-            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-6 relative">
+            <div className="w-full lg:w-1/3 lg:px-4 xl:px-8 space-y-4 md:space-y-6 relative">
               <figure className="">
                 <Image 
                   src="/scale.svg"
@@ -82,7 +82,7 @@ export default function Home() {
                   height={40}
                 />              
               </figure>
-              <h3 className="text-2xl text-gray-900 font-bold">
+              <h3 className="text-xl md:text-2xl text-gray-900 font-bold">
                 Easy to Scale Up or Out as Needed
               </h3>
               <p className="text-lg">
@@ -111,7 +111,7 @@ export default function Home() {
 
       <section className="py-20">
         <div className="sectionContentWrapper">
-          <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-10">
+          <h2 className="block text-3xl md:text-4xl font-bold text-center w-full leading-tight mb-10">
             Why Use IOMesh?
           </h2>
           <div className="grid grid-col-2 gap-8">
@@ -123,12 +123,12 @@ export default function Home() {
                 <h3 className="block text-3xl font-bold text-left w-full mb-8">
                   Better TPS for Database
                 </h3>
-                <p className="text-xl text-gray-700">
+                <p className="text-lg md:text-xl text-gray-700">
                   IOMesh performs very well in benchmark tests for Kubernetes, with greater IOPS and lower I/O latency, which means that it can provide more stable data services.
                 </p>
-                <figure className="text-gray-900 mt-12 w-1/2 xl:w-1/3">
+                <figure className="text-gray-900 mt-12 w-2/3 sm:w-1/2 xl:w-1/3">
                   <div className="">
-                    <span className="text-5xl italic">&lt;</span> <span className="text-5xl font-bold italic">100</span> <span>ms</span>
+                    <span className="text-3xl sm:text-5xl italic">&lt;</span> <span className="text-5xl font-bold italic">100</span> <span>ms</span>
                   </div>
                   <div className="mt-4 text-gray-500 leading-tight">
                     I/O Latency Latency is stablely kept in a low level.
@@ -148,7 +148,7 @@ export default function Home() {
                   Efficient Software Fault Isolation
                 </h3>
                 
-                <div className="text-xl text-gray-700 space-y-6">
+                <div className="text-lg md:text-xl text-gray-700 space-y-6">
                   <p>
                     IOMesh runs entirely in user space, minimizing the crash of the entire system. 
                   </p>
@@ -167,7 +167,7 @@ export default function Home() {
               </figure>
 
             </div>
-            <div className="p-6 md:p-8 lg:p-10 col-span-2 bg-white rounded-xl flex items-center md:flex-nowrap items-end space-y-8 md:space-y-0 hover:shadow-lg transition-shadow   duration-500">
+            <div className="p-6 md:p-8 lg:p-10 col-span-2 bg-white rounded-xl flex flex-wrap items-center md:flex-nowrap items-end space-y-8 md:space-y-0 hover:shadow-lg transition-shadow   duration-500">
               <div className="w-full md:w-2/4">
                 <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
                   Automated Storage Tiering
@@ -175,7 +175,7 @@ export default function Home() {
                 <h3 className="block text-3xl font-bold text-left w-full mb-8">
                   Make the Most out of Your Money
                 </h3>
-                <div className="text-xl text-gray-700 space-y-6">
+                <div className="text-lg md:text-xl text-gray-700 space-y-6">
                   <p>
                     Support flexible deployment of hybrid disks, such as NVMe SSD, SATA SSD, HDD.
                   </p>
@@ -206,7 +206,7 @@ export default function Home() {
       <section className="py-10">
         <div className="sectionContentWrapper grid grid-cols-4 gap-6 pb-20">
           <Link href="/blog/annoucing-iomesh-1.0.0">
-            <a className="block col-span-4 lg:col-span-2 p-12 group rounded-xl hover:bg-iopurple transition-all">
+            <a className="block col-span-4 lg:col-span-2 p-4 md:p-12 group rounded-xl hover:bg-iopurple transition-all">
               <h4 className="text-md font-bold text-gray-600 uppercase group-hover:text-white group-hover:opacity-60 transition">
                 Latest Blog
               </h4>
@@ -218,7 +218,7 @@ export default function Home() {
               </p>
             </a>
           </Link>
-          <div className="col-span-4 lg:col-span-2 p-12">
+          <div className="col-span-4 lg:col-span-2 p-4 md:p-12">
             <h4 className="text-md font-bold text-gray-600 uppercase group-hover:text-white group-hover:opacity-60 transition">
               Stay Tuned
             </h4>

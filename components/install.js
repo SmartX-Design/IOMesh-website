@@ -14,14 +14,14 @@ const Install = ({ router }) => {
       <h3 className="text-2xl font-bold">One-line Code to Install IOMesh</h3>
       {/* <h4 className="text-gray-500 mt-2">Just use one line of code to start using IOMesh.</h4>    */}
       <div className="tabWrapper">
-        <div className="w-96 h-10 px-1 mx-auto my-4 bg-white rounded-3xl flex items-center">
+        <div className="w-96 max-w-full h-10 px-1 mx-auto my-4 bg-white rounded-3xl flex items-center">
           <Link scroll={false} href={{ pathname: router.pathname, query: { tab: "1" } }}>
-            <a className={ `w-1/2 h-8 leading-8 text-sm rounded-3xl hover:font-bold ${
+            <a className={ `w-1/2 px-2 h-8 leading-8 text-sm rounded-3xl hover:font-bold truncate ${
               isTabOne ? "font-bold bg-iopurple text-white" : "text-gray-800 "
             }`} >RHEL7/CentOS7</a>
           </Link>
           <Link scroll={false} href={{ pathname: router.pathname, query: { tab: "2" } }}>
-          <a className={ `w-1/2 h-8 leading-8 text-sm rounded-3xl hover:font-bold ${
+          <a className={ `w-1/2 px-2 h-8 leading-8 text-sm rounded-3xl hover:font-bold truncate ${
               isTabTwo ? "font-bold bg-iopurple text-white" : "text-gray-800 "
             }`} >RHEL8/CentOS8/CoreOS</a>
           </Link>

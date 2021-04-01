@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 export const Footer = () => {
     return (
-      <footer className="sectionContentWrapper pt-4 pb-16 flex justify-between items-center text-sm border-t border-gray-300">
-        <div className="text-lg" >IOMesh</div>
-        <div className="space-x-4">
+      <footer className="sectionContentWrapper pt-4 pb-16 flex justify-between items-center flex-wrap text-sm border-t border-gray-300">
+        <div className="text-lg w-full md:w-auto" >IOMesh</div>
+        <div className="space-x-2 md:space-x-4 flex items-center">
           <Link href="/spec">
             <a className="footerLink">Spec</a>
           </Link>
