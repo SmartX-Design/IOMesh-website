@@ -148,12 +148,12 @@
 	width: 24px;
 }
 
-.blogArticleSection {
+/* .blogArticleSection {
     @apply max-w-screen-md mx-auto flex space-x-4;
-}
+} */
 
 .blogArticle {
-    @apply w-4/5 text-lg pb-20;
+    @apply lg:w-4/5 text-lg pb-20 w-full;
 }
 
 .blogArticle h1 {
@@ -194,6 +194,10 @@
 
 .blogArticle img {
     @apply p-4 rounded bg-white;
+}
+
+.blogArticle pre {
+    @apply text-sm;
 }
 
 /* 缺少 Table、Code 样式定义 */

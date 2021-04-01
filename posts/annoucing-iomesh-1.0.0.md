@@ -11,6 +11,24 @@ IOMesh is a distributed storage system specially designed for Kubernetes workloa
 - IOMesh runs natively on Kubernetes and fully utilizes the Kubernetes's capabilities. Therefore, the operation teams can leverage the standard Kubernetes APIs to uniformly manage the applications and IOMesh, which integrates perfectly with existing DevOps processes.
 - IOMesh enables users to start at a small scale and expand the storage at will by adding disks or nodes.
 
+```yaml
+meta:
+  podPolicy:
+    affinity:
+      nodeAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+          nodeSelectorTerms:
+          - matchExpressions:
+            - key: kubernetes.io/e2e-az-name
+              operator: In
+              values:
+              - az1
+              - az2
+```
+
+> **_NOTE_: replace `my-iomesh` with your release name.**
+
+
 ## Key Features
 
 ### High Performance

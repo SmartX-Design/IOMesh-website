@@ -139,64 +139,73 @@ export default function Home() {
                 Performance Chart
               </div>
             </div>
-            <div className="p-12 col-span-1 bg-white rounded-xl">
-              <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
-                No Kernel Dependencies
-              </h4>
-              <h3 className="block text-3xl font-bold text-left w-full mb-8">
-                Efficient Software Fault Isolation
-              </h3>
-              <figure className="w-full flex flex-col items-center mb-8">
-                <Image 
-                  src="/no_kernel.png"
-                  width={394}
-                  height={160}
-                />    
-              </figure>
-              <div className="text-xl text-gray-700 space-y-6">
-                <p>
-                  IOMesh runs entirely in user space, minimizing the crash of the entire system. 
-                </p>
-                <p>
-                  This can help you simplify deployment and maintenance without having to consider kernel modules.
-                </p>
+            <div className="p-12 col-span-2 bg-white rounded-xl flex items-end">
+              <div className="w-2/4">
+                <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
+                  No Kernel Dependencies
+                </h4>
+                <h3 className="block text-3xl font-bold text-left w-full mb-8">
+                  Efficient Software Fault Isolation
+                </h3>
+                
+                <div className="text-xl text-gray-700 space-y-6">
+                  <p>
+                    IOMesh runs entirely in user space, minimizing the crash of the entire system. 
+                  </p>
+                  <p>
+                    This can help you simplify deployment and maintenance without having to consider kernel modules.
+                  </p>
+                </div>
+              </div>
+              <div className="w-2/4 rounded-r-xl">
+                <figure className="w-full flex flex-col items-center mb-8">
+                  <Image 
+                    src="/no_kernel.png"
+                    width={394}
+                    height={160}
+                  />    
+                </figure>
               </div>
             </div>
-            <div className="col-span-1 p-12 bg-white rounded-xl">
-              <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
-                Automated Storage Tiering
-              </h4>
-              <h3 className="block text-3xl font-bold text-left w-full mb-8">
-                Make the Most out of Your Money
-              </h3>
-              <figure className="w-full flex flex-col items-center mb-8">
+            <div className="p-12 col-span-2 bg-white rounded-xl flex items-end">
+              <div className="w-2/4">
+                <h4 className="text-md font-bold text-gray-500 uppercase mb-2">
+                  Automated Storage Tiering
+                </h4>
+                <h3 className="block text-3xl font-bold text-left w-full mb-8">
+                  Make the Most out of Your Money
+                </h3>
+                <div className="text-xl text-gray-700 space-y-6">
+                  <p>
+                    Support flexible deployment of hybrid disks, such as NVMe SSD, SATA SSD, HDD.
+                  </p>
+                  <p>
+                    Maximize the storage performance while controlling costs to a certain extent.
+                  </p>
+                </div>
+              </div>
+              
+              <figure className="w-2/4 flex flex-col items-center mb-8">
                 <Image 
                   src="/tiering.png"
                   width={394}
                   height={160}
                 />    
               </figure>
-              <div className="text-xl text-gray-700 space-y-6">
-                <p>
-                  Support flexible deployment of hybrid disks, such as NVMe SSD, SATA SSD, HDD.
-                </p>
-                <p>
-                  Maximize the storage performance while controlling costs to a certain extent.
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
       </section>
-      <section className="pb-20">
+      <section className="py-10 bg-white">
         <div className="sectionContentWrapper" id="install">
           <Install></Install> 
         </div>
       </section>
 
-      <section className="">
+      <section className="py-10">
         <div className="sectionContentWrapper grid grid-cols-4 gap-6 pb-20">
-          <Link href="/">
+          <Link href="/blog/annoucing-iomesh-1.0.0">
             <a className="block col-span-2 p-12 group rounded-xl hover:bg-iopurple transition-all">
               <h4 className="text-md font-bold text-gray-600 uppercase group-hover:text-white group-hover:opacity-60 transition">
                 Latest Blog

@@ -29,8 +29,8 @@ export default function Post({ postData }) {
       <section className="firstSectionPage">
         <h2 className="block text-4xl font-bold text-center w-full leading-tight mb-20">{postData.title}</h2>
       </section>
-      <section className="blogArticleSection">
-        <div className="text-sm text-gray-500 w-1/5 leading-8">
+      <section className="max-w-screen-md mx-auto flex lg:space-x-4 flex-wrap lg:flex-nowrap px-8 lg:px-0">
+        <div className="w-full lg:w-1/5 text-sm text-gray-500 leading-8">
           <Date dateString={postData.date} />
         </div>
 
