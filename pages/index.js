@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-          <title>IOMesh</title>
+        <title>IOMesh</title>
       </Head>
       <section className="firstSection">
         <div className="sectionContentWrapper">
