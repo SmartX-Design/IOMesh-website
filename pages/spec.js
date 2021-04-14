@@ -15,7 +15,7 @@ export default function Spec() {
         </section> 
         <section className="py-16">
           <div className="sectionContentWrapper overflow-auto ">
-            <table className="table-fixed max-w-screen-lg mx-auto text-left bg-white lg:rounded-lg">
+            <table className="table-fixed max-w-screen-lg mx-auto text-left bg-white rounded-lg sm:rounded-xl">
               <thead className="text-xl border-b-2 border-gray-200">
                 <tr className="h-20">
                     <th className="w-2/5 px-8"></th>
@@ -133,7 +133,7 @@ export default function Spec() {
           </div>
         </section>
         <section className="pb-20">
-          <div className="max-w-screen-lg mx-auto">
+          <div className="container mx-auto max-w-screen-lg px-6 sm:px-8 lg:px-0">
             <Install></Install> 
           </div>
         </section>

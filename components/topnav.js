@@ -21,28 +21,19 @@ export const Topnav = () => {
             height={84}
           />
         </Link>
-        <button
-          className="w-12 h-12 hover:bg-iopurple rounded lg:hidden text-iopurple ml-auto hover:text-white outline-none ring-0 transition"
+        <button id="navHamburger"
+          className={`${
+            active ? 'open' : ' '}
+            lg:hidden`}
           onClick={handleClick}
         >
-          <svg
-            className='w-6 h-6 mx-auto'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M4 6h16M4 12h16M4 18h16'
-            />
-          </svg>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
         <ul className={`${
             active ? '' : 'hidden'
-          } flex flex-col absolute bg-white right-0 top-20 rounded p-4 lg:p-0 lg:bg-transparent lg:relative lg:top-0 lg:flex lg:flex-row lg:items-center lg:space-x-4 shadow-xl lg:shadow-none`}>
+          } flex flex-col absolute bg-white right-0 top-20 rounded-xl p-4 lg:flex lg:p-0 lg:bg-transparent lg:relative lg:top-0 lg:flex-row lg:items-center lg:space-x-4 shadow-xl lg:shadow-none`}>
           <li className="">
             <Link href="/spec">
               <a className={ `p-4 text-base text-gray-800 hover:text-iopurple block w-full lg:w-auto ${

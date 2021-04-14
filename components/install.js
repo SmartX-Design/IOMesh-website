@@ -28,16 +28,16 @@ const Install = ({ router }) => {
         </div>
         <div className="tabBody relative max-w-xl mx-auto">
           {isTabOne && <React.Fragment>
-              <textarea type="textarea" disabled value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el7.sh | sh -"
-                className="w-full py-2 pl-2 pr-8 h-28 sm:h-20 resize-none bg-gray-900 rounded-md text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
+              <textarea type="textarea" readOnly value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el7.sh | sh -"
+                className="w-full py-2 pl-2 pr-16 h-28 sm:h-20 resize-none bg-gray-900 rounded-md text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
               />
-              <button className="px-4 h-8 absolute top-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light">Copy</button>
+              <button className="px-2 h-8 absolute top-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light focus:outline-none">Copy</button>
             </React.Fragment>}
           {isTabTwo && <React.Fragment>
-            <textarea type="textarea" disabled value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el8.sh | sh -"
-                className="w-full py-2 pl-2 pr-8 h-28 sm:h-20 resize-none bg-gray-900 rounded-md text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
+            <textarea type="textarea" readOnly value="export IOMESH_DATA_CIDR=10.234.1.0/24; curl -sSL https://raw.githubusercontent.com/iomesh/docs/master/scripts/install_iomesh_el8.sh | sh -"
+                className="w-full py-2 pl-2 pr-16 h-28 sm:h-20 resize-none bg-gray-900 rounded-md text-indigo-400 font-mono text-sm hover:shadow-lg transition-shadow"
             />
-            <button className="px-4 h-8 absolute top-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light">Copy</button>
+            <button className="px-2 h-8 absolute top-0 right-0 rounded-md text-white text-sm hover:text-iopurple-light focus:outline-none">Copy</button>
           </React.Fragment>}
         </div>
       </div>
