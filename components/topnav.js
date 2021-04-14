@@ -33,7 +33,7 @@ export const Topnav = () => {
         </button>
         <ul className={`${
             active ? '' : 'hidden'
-          } flex flex-col absolute bg-white right-0 top-20 rounded-xl p-4 lg:p-0 lg:bg-transparent lg:relative lg:top-0 lg:flex-row lg:items-center lg:space-x-4 shadow-xl lg:shadow-none`}>
+          } flex flex-col absolute bg-white right-0 top-20 rounded-xl p-4 lg:flex lg:p-0 lg:bg-transparent lg:relative lg:top-0 lg:flex-row lg:items-center lg:space-x-4 shadow-xl lg:shadow-none`}>
           <li className="">
             <Link href="/spec">
               <a className={ `p-4 text-base text-gray-800 hover:text-iopurple block w-full lg:w-auto ${
